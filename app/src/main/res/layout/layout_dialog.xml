@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="651dp"
+        android:onClick="decreaseInteger"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/integer_number"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/increase"
+        android:layout_toLeftOf="@+id/increase"
+        android:layout_toEndOf="@+id/decrease"
+        android:layout_toRightOf="@+id/decrease"
+        android:text="0"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="162dp"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="629dp"
+        android:onClick="increaseInteger"
+        android:text="+" />
+</RelativeLayout>
